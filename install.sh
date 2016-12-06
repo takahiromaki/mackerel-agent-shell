@@ -8,8 +8,8 @@ set API_KEY = $1
 # download
 cd ~
 curl -O https://mackerel.io/file/agent/tgz/mackerel-agent-latest.tar.gz
-tar xfvz ./mackerel-agent-latest.tar.gz
-mv ./mackerel-agent /etc/
+tar xfvz ~/mackerel-agent-latest.tar.gz
+mv ~/mackerel-agent /etc/
 
 # write service file
 cat <<EOF > /etc/systemd/system/mackerel-agent.service
